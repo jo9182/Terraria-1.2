@@ -1255,14 +1255,14 @@ namespace Terraria
 		private float cTop;
 		[CompilerGenerated]
 		private static Action<char> CachedAnonymousMethodDelegate1;
-		[DllImport("User32")]
+		//[DllImport("User32")]
 		private static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
-		[DllImport("User32")]
+		//[DllImport("User32")]
 		private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
-		[DllImport("User32")]
+		//[DllImport("User32")]
 		private static extern int GetMenuItemCount(IntPtr hWnd);
-		[DllImport("kernel32.dll")]
-		public static extern IntPtr LoadLibrary(string dllToLoad);
+		//[DllImport("kernel32.dll")]
+		//public static extern IntPtr LoadLibrary(string dllToLoad);
 		public static void LoadWorlds()
 		{
 			Directory.CreateDirectory(Main.WorldPath);
@@ -1949,9 +1949,9 @@ namespace Terraria
 		{
 			Main.autoShutdown = true;
 		}
-		[DllImport("user32.dll")]
+		//[DllImport("user32.dll")]
 		public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
-		[DllImport("user32.dll")]
+		//[DllImport("user32.dll")]
 		private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 		public void AutoPass()
 		{
@@ -6994,7 +6994,7 @@ namespace Terraria
 		{
 			Main.keyCount = 0;
 		}
-		[DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
+		//[DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
 		public static extern short GetKeyState(int keyCode);
 		public static string GetInputText(string oldString)
 		{
@@ -21407,7 +21407,7 @@ namespace Terraria
 		}
 		protected void QuitGame()
 		{
-			Steam.Kill();
+		//	Steam.Kill();
 			base.Exit();
 		}
 		protected Color randColor()
